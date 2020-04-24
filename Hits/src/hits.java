@@ -1,5 +1,3 @@
-/* Shubham Agarwal cs610 6343 prp */
-
 import static java.lang.Math.abs;
 
 import java.io.File;
@@ -11,7 +9,7 @@ import java.util.Scanner;
  * @author Shubham Agarwal
  *
  */
-public class hits6343 {
+public class hits {
 
 	static int[][] adjacencyMatrix; // adjacency list
 	static int[] outDegree; // Out Degree
@@ -38,7 +36,7 @@ public class hits6343 {
 				return;
 			}
 
-			hitsAlgo6343(iterations, initialValue, fileName); // Call Hits algorithm method
+			hitsAlgo(iterations, initialValue, fileName); // Call Hits algorithm method
 
 		} else {
 			System.out.println("Invalid number of arguments entered!");
@@ -167,7 +165,7 @@ public class hits6343 {
 	 * @param String fileName
 	 */
 	@SuppressWarnings("resource")
-	public static void hitsAlgo6343(int iterations, int initialValue, String fileName) {
+	public static void hitsAlgo(int iterations, int initialValue, String fileName) {
 		int vertexCount = 0; // Count of Vertices
 		int edgeCount = 0; // Count of Edges
 		int noOfRows = 0;
